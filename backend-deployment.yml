@@ -14,7 +14,7 @@ spec:
    spec:
     containers:
     - name: backend
-      image: rhkzl/backend:latest
+      image: rhkzl/backend:0.1
       envFrom:
       ports:
       - containerPort: 8000
