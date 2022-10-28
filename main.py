@@ -7,7 +7,7 @@ cors = CORS(app, resources={"r/*": {"origins": "*"}})
 @app.route("/hello")
 def hello():
     code = {"code" : 200}
-    message = {"message" : "hello flask" }
+    message = {"message" : "hello flask"}
     # result = {"code" : 200, "message" : "hello flask"}
     return code, message
 
