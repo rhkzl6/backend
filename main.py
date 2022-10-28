@@ -6,10 +6,8 @@ cors = CORS(app, resources={"r/*": {"origins": "*"}})
 
 @app.route("/hello")
 def hello():
-    code = {"code" : 200}
-    message = {"message" : "hello flask"}
-    # result = {"code" : 200, "message" : "hello flask"}
-    return code, message
+    result = {"code" : 200, "message" : "hello flask"}
+    return result
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
