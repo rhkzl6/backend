@@ -16,6 +16,10 @@ spec:
     - name: backend
       image: rhkzl/backend:latest
       envFrom:
+        - configMapRef:
+            name: mysql-cm
+        - secretRef:
+            name: mysql-sec
       ports:
       - containerPort: 8000
       resources:
@@ -23,5 +27,3 @@ spec:
           cpu: 100m
         limits:
           cpu: 200m
-
-          #asdasdasdasdss
